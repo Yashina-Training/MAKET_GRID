@@ -12,10 +12,10 @@ body {
   display: grid;
   grid-template-columns: 320px 1fr;
   grid-template-rows: auto 3fr auto;
-  grid-template-areas: "header header"
+  grid-template-areas:
+    "header header"
     "side content"
-    "footer footer"
-  ;
+    "footer footer";
 }
 
 .header {
@@ -84,15 +84,13 @@ body {
   grid-area: footer;
 }
 
-@media (max-width: 768px) {
-
-
+@media (max-width: 805px) {
   .wrapper {
     grid-template-columns: auto;
     grid-template-rows: auto auto;
-    grid-template-areas: "content"
-      "side"
-    ;
+    grid-template-areas:
+      "content"
+      "side";
   }
 
   .header,
@@ -100,9 +98,8 @@ body {
     display: none;
   }
 
-
-
-  .left-side {}
+  .left-side {
+  }
 
   .content {
     padding: 20px 10px;
